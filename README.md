@@ -1,2 +1,2 @@
-# digiwar.github.io
+# digiwar
 Beta version

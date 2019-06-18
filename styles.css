@@ -70,7 +70,7 @@ body .demo-blog {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  max-height: 150px;
+  max-height: 200px;
 }
 .demo-blog .mdl-card__title {
   padding: 16px;

@@ -81,7 +81,7 @@ body .demo-blog {
 .demo-blog .mdl-card__media {
   box-sizing: border-box;
   background-size: cover;
-  padding: 24px;
+  padding: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +186,7 @@ body .demo-blog {
 }
 .demo-blog .coffee-pic .mdl-card__media {
   /*background-image: url('images/coffee.jpg');*/
+  background-color: rgb(109, 109, 109);
 }
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;

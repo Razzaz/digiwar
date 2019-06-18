@@ -463,11 +463,6 @@ body .demo-blog {
   width: 44px;
   height: 44px;
   background-image: url('images/opa_voice.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  border-radius: 22px;
-  background-color: #F5F5F5;
 }
 
 /* Fixes for IE 10 */

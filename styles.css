@@ -460,13 +460,11 @@ body .demo-blog {
   background-color: #F5F5F5;
 }
 .demo-blog .minilogo1 {
-  width: 100px;
-  height: 100px;
-  background-image: url('images/avatar1.png');
+  height: 300px;
+  background-image: url('images/opa_voice.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
-  background-color: #F5F5F5;
 }
 
 /* Fixes for IE 10 */

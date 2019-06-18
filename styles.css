@@ -193,7 +193,7 @@ body .demo-blog {
   display: flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column;
+          flex-direction: column
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -425,7 +425,7 @@ body .demo-blog {
   color: rgba(0, 0, 0, 0.24);
 }
 .demo-blog--blogpost .comments .comment > .comment__answers {
-  padding-top: 32px;
+  padding-top: 85px;
   padding-left: 48px;
 }
 
@@ -494,7 +494,7 @@ body .demo-blog {
 
 .demo-blog .mdl-mini-footer {
   margin-top: 80px;
-  height: 120px;
+  height: 80px;
   padding: 40px;
   -webkit-align-items: center;
       -ms-flex-align: center;

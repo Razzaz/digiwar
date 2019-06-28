@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="description" content="Sharpen your steel, bring your arrow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Digiwar-BETA</title>
 
@@ -115,6 +115,30 @@
       <div class="mdl-layout__obfuscator"></div>
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAISMs217Hfy1KlnN-2yTV-DN0zkWSO0s8",
+        authDomain: "digiwar-beta.firebaseapp.com",
+        databaseURL: "https://digiwar-beta.firebaseio.com",
+        projectId: "digiwar-beta",
+        storageBucket: "digiwar-beta.appspot.com",
+        messagingSenderId: "929993774227",
+        appId: "1:929993774227:web:4a075486cbd27305"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
   </body>
   <script>
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {

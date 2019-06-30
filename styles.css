@@ -598,6 +598,16 @@ body .demo-blog {
   animation-duration: 1.5s;
 }
 
+/* login center position */
+.login-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

@@ -137,6 +137,17 @@
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
+
+      var uid = null;
+      firebase.auth().onAuthStateChanged(function(user){
+        if (user){
+          uid = user.uid;
+        }else{
+          uid = null;
+          window.location.replace("login.html");
+        }
+      })
+
     </script>
 
   </body>

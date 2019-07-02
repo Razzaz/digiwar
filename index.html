@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,20 +62,8 @@
   <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyAISMs217Hfy1KlnN-2yTV-DN0zkWSO0s8",
-      authDomain: "digiwar-beta.firebaseapp.com",
-      databaseURL: "https://digiwar-beta.firebaseio.com",
-      projectId: "digiwar-beta",
-      storageBucket: "digiwar-beta.appspot.com",
-      messagingSenderId: "929993774227",
-      appId: "1:929993774227:web:4a075486cbd27305"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-</script>
+  <script src="firebase.js"></script>
+
 <script>
     // Initialize the FirebaseUI Widget using Firebase.
     var ui = new firebaseui.auth.AuthUI(firebase.auth());
@@ -95,8 +82,8 @@
         }
       },
       // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-      signInFlow: 'popup',
       signInSuccessUrl: 'dashboard.html',
+      signInFlow: 'popup',
       signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -108,12 +95,11 @@
       ],
       // Terms of service url.
       tosUrl: '<your-tos-url>',
-      // Privacy policy url.
       privacyPolicyUrl: '<your-privacy-policy-url>'
     };
 
     ui.start('#firebaseui-auth-container', uiConfig);
-    
+
     firebase.auth().onAuthStateChanged(function(user){
       if (user){
         window.location.replace("dashboard.html");
@@ -137,5 +123,4 @@
     });
   });
 </script>
-
 </html>
